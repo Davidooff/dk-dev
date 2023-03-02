@@ -16,7 +16,7 @@ a:link, a:visited {
     text-decoration: none;
   }
 
-header, section, footer{
+.content{
     width: 1280px;
     margin: 5px auto;
 }

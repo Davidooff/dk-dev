@@ -1,0 +1,18 @@
+<section class="gallery-section">
+    <h2>Galerien</h2>
+    <div class="gallery__content content">
+        <div class="gallery__slider-nav-el" (click)="move('left')"><img src="/assets/gallery/chevron.png" alt=""></div>
+        <div class="gallery__slider">
+            <div class="gallery__slider-move" [style.margin-left]="marginLeft + 'px'">
+                <div class="gallery__slider__el" *ngFor="let el of gallerySliderLinks">
+                    <div class="gallery__slider__el__text">
+                        <h3>Es fühlt sich an, als wäre jeder Zaun bereits für Sie gemacht worden.</h3>
+                        <p>Alles für den Komfort Ihres Zuhauses</p>
+                    </div>
+                    <img [src]='URL + "/" + el + ".jpg"' class="gallery__slider__el__img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="gallery__slider-nav-el" (click)="move('right')"><img src="/assets/gallery/chevron.png" alt=""></div>
+    </div>
+</section>

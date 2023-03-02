@@ -1,0 +1,48 @@
+.call-me-section{
+    padding-top: 1px;
+    background: #1b2024;
+    padding-bottom: 5px;
+}
+
+h2{
+    color: white;
+}
+
+input{
+    width: calc(100% - 8px);
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+input, textarea, button{
+    height: 100px;
+    background: transparent;
+    color: #fff;
+    border: 1.5px solid white;
+    font-size: 23px;
+}
+
+button{
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.row input{
+    padding-right: auto;
+    margin: 0 20px 50px 0px;
+}
+
+.row input:last-child{
+    margin: 0 0 50px 20px;
+}
+
+textarea{
+    width: calc(100% - 8px);
+}

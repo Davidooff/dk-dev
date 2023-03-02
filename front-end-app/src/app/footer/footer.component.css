@@ -1,0 +1,32 @@
+footer{
+    background: black;
+    color: #f9bd08;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+h3{
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.content .row{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer-content__item{
+    display: flex;   
+    margin: 10px 100px;
+}
+
+.footer-content__item img {
+    width: 50px;
+    height: 50px;
+}
+.footer-content__item p{
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+}
