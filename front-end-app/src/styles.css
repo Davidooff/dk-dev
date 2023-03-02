@@ -1,0 +1,26 @@
+body{
+    font-family: Montserrat,sans-serif;
+    line-height: 1;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h2{
+    margin: 100px auto 80px auto;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 600;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+  }
+
+header, section, footer{
+    width: 1280px;
+    margin: 5px auto;
+}
+
+img{
+    object-fit: contain;
+}
