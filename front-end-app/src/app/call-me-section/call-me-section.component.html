@@ -1,6 +1,9 @@
 <section class="call-me-section">
     <h2>Ruf mich zurück</h2>
     <div class="content">
+        <div class="err-msg" *ngIf="msg.isErr">
+            <p>{{msg.msg}}</p>
+        </div>
         <form (submit)="callMeClick()">
             <input type="email" [(ngModel)]="email" name="email" id="email" placeholder="Email*">
             <div class="row">

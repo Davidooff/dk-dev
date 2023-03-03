@@ -16,20 +16,20 @@ export class CallSectionFormServiceService {
   
   constructor() { }
 
-  chekData(data: Data): [string, boolean]{
+  chekData(data: Data): {msg:string, isErr:boolean}{
     if(!data.email){
-      return ['Pls enter email', true]
+      return {msg: 'Pls enter email', isErr: true}
     } else if(!EMAIL_REGEXP.test(data.email)){
-      return ['Pls enter corect email', true]
+      return {msg: 'Pls enter corect email', isErr: true}
     } else if(!data.name){
-      return ['Pls enter name', true]
+      return {msg: 'Pls enter name', isErr: true}
     } else if(data.name.length < 2 || (/\d/.test(data.name))){ // /\d/.test(data.name) - search for digts in name by regex
-      return ['Pls enter corect name', true]
+      return {msg: 'Pls enter corect name', isErr: true}
     } else if(!data.tell){
-      return ['Pls enter tell', true]
+      return {msg: 'Pls enter tell', isErr: true}
     } else if(TELL_REGEXP.test(data.tell)){
-      return ['Pls enter corect tell', true]
+      return {msg: 'Pls enter corect tell', isErr: true}
     }
-    return ['ok', false]
+    return {msg: '', isErr: false}
   }
 }
