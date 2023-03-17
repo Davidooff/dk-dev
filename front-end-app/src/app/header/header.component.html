@@ -1,5 +1,8 @@
-<header class="content">
-    <img src="/assets/logo.png" alt="" class="header-logo">
+<header class="content" [style.height]="open ? '250px' : '118px'">
+    <div class="logo-and-list">
+        <img src="/assets/logo.png" alt="" class="header-logo">
+        <img class="list-opn" src="/assets/gallery/chevron.png" alt="" (click)="open=!open" [style.transform]="open ? 'rotate(270deg)' : 'rotate(90deg)'">
+    </div> 
     <nav class="header-nav">
         <ul class="in-line-list site-nav">
             <li><a>ABOUT US</a></li>
@@ -8,8 +11,8 @@
         </ul>
         <div class="ln-select">
             <ul class="in-line-list ln-nav">
-                <li class="choosed-ln">PL</li>
-                <li>DE</li>
+                <li class="choosed-ln"><a href="/pl">PL</a></li>
+                <li><a href="/de">DE</a></li>
             </ul>
         </div>
     </nav>

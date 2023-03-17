@@ -4,6 +4,14 @@
   "newProjectRoot": "projects",
   "projects": {
     "front-end-app": {
+      "i18n": {
+        "sourceLocale": "pl",
+        "locales": {
+          "de": {
+            "translation": "src/locale/messages.de.xlf"
+          }
+        }
+      },
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,6 +21,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": true,
+            "i18nMissingTranslation": "error",
             "outputPath": "dist/front-end-app",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -30,6 +40,9 @@
             "scripts": []
           },
           "configurations": {
+            "de": {
+              "localize": ["de"]
+            },
             "production": {
               "budgets": [
                 {
@@ -42,7 +55,7 @@
                   "maximumWarning": "2kb",
                   "maximumError": "4kb"
                 }
-              ],
+                ],
               "outputHashing": "all"
             },
             "development": {
@@ -59,6 +72,9 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
+            "de":{
+              "browserTarget": "front-end-app:build:development,de"
+            },
             "production": {
               "browserTarget": "front-end-app:build:production"
             },
@@ -71,7 +87,9 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "front-end-app:build"
+            "browserTarget": "front-end-app:build",
+            "format": "xlf",
+            "outputPath": "src/locale"
           }
         },
         "test": {

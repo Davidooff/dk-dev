@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="pl" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="5082641629772333685" datatype="html">
+        <source>О nas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-section/about-section.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7429893936175750577" datatype="html">
+        <source>Nasza firma pragnie komfortu i bezpieczeństwa klientów. Dkzäune jest do Twojej dyspozycji. Oferujemy prostą i bezpłatną konsultację na miejscu. Firma posiada duże doświadczenie w budownictwie i rozwoju projektów. Nasi pracownicy szukają rozwiązań dla Twoich potrzeb. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about-section/about-section.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7923349790997740924" datatype="html">
+        <source>Oddzwoń</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/call-me-section/call-me-section.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4875539287260604125" datatype="html">
+        <source>Galerien</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery-section/gallery-section.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4364543641291652814" datatype="html">
+        <source>Wydaje się, że każde ogrodzenie zostało już stworzone dla Ciebie.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery-section/gallery-section.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8958810572973318862" datatype="html">
+        <source>Wszystko dla komfortu Twojego domu</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/gallery-section/gallery-section.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8590783444687044465" datatype="html">
+        <source>NAJLEPSZA <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>JAKOŚĆ<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> W NAJLEPSZEJ CENIE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-section/main-section.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3250554051151313438" datatype="html">
+        <source> DO GALERII </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-section/main-section.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

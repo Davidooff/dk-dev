@@ -36,7 +36,8 @@
     margin: 120px auto;
     color: white;
     border: 1px solid white;
-    width: 1024px;
+    max-width: 1024px;
+    width: 90%;
     height: 126px;
     
 }

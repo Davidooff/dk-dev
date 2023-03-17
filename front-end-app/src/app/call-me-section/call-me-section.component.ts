@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CallSectionFormServiceService, Data } from '../call-section-form-service.service';
 import { HttpClient } from '@angular/common/http';
-
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
@@ -34,13 +33,31 @@ export class CallMeSectionComponent {
     }
     this.msg = this.checkForm.chekData(data)
     if(this.msg.isErr){
-      setInterval(() => this.msg.isErr = false, 5000)
+      setTimeout(() => this.msg.isErr = false, 10000)
     } else{
-      this.http.post<Data>('http://localhost:3000/', data, {
-        headers: {
-          'Access-Control-Allow-Origin': '*'
-        }
-      }).subscribe((msg) => console.log);
+
+        this.http.post<Data>('http://localhost:3000/', data, {
+          headers: {
+            'Access-Control-Allow-Origin': '*'
+          }
+        }).subscribe(
+          (response) => {                     
+            this.msg.isErr = true      
+            this.msg.msg = "Success"
+            setTimeout(() => this.msg.isErr = false, 10000)
+
+          },
+          (error) => {                              
+            this.msg.isErr = true      
+            this.msg.msg = "error"
+            alert("Error")
+            setTimeout(() => this.msg.isErr = false, 10000)
+
+      
+            //throw error;   //You can also throw the error to a global error handler
+          }
+        );
+
     }
     return false
   }

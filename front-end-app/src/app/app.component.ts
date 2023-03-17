@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'front-end-app';
+  localesList = [
+    { code: 'pl', lable: "Polski"},
+    { code: 'de', lable: "Deutsch"}
+  ];
 }

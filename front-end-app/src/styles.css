@@ -17,7 +17,8 @@ a:link, a:visited {
   }
 
 .content{
-    width: 1280px;
+    max-width: 1260px;
+    width: 95%;
     margin: 5px auto;
 }
 
